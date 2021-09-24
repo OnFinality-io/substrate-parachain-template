@@ -1,0 +1,14 @@
+.git
+**/target/
+#**/*.txt
+#**/*.md
+#/docker/
+
+# dotfiles in the repo root
+/.*
+Dockerfile
+target/
+docker/
+docs/
+scripts/
+README.md
