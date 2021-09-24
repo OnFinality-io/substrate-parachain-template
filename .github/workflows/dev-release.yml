@@ -19,6 +19,9 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chain: [ "parachain" ]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Docker Buildx
