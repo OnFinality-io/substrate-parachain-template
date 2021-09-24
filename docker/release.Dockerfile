@@ -6,7 +6,7 @@ WORKDIR /polkadot
 
 COPY . /polkadot
 
-RUN --mount=type=cache,target=/polkadot/target,from=/tmp/.buildx-cache/target cargo build --release
+RUN cargo build --release
 
 # ===== SECOND STAGE ======
 
