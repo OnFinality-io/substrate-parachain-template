@@ -46,8 +46,6 @@ jobs:
           tags: |
             onfinality/parachain-template:dev
             onfinality/parachain-template:${{ steps.vars.outputs.sha_short }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Srtool build
